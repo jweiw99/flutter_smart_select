@@ -123,7 +123,7 @@ class SmartSelectTile extends StatelessWidget {
     return isLoading != true
         ? trailing != null
             ? trailing
-            : Icon(Icons.keyboard_arrow_right, color: Colors.grey)
+            : Icon(Icons.keyboard_arrow_right, color: Colors.blue)
         : SizedBox(
             child: CircularProgressIndicator(
               valueColor: AlwaysStoppedAnimation<Color>(Colors.black45),
@@ -137,7 +137,7 @@ class SmartSelectTile extends StatelessWidget {
   Widget get _valueWidget {
     return Text(
       isLoading ? loadingText : value,
-      style: TextStyle(color: Colors.grey),
+      style: TextStyle(color: Colors.blue),
       overflow: TextOverflow.ellipsis,
       maxLines: 1,
     );
