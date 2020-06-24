@@ -137,7 +137,7 @@ class SmartSelectTile extends StatelessWidget {
   Widget get _valueWidget {
     return Text(
       isLoading ? loadingText : value,
-      style: TextStyle(color: Colors.blue, fontSize: 16),
+      style: TextStyle(fontWeight: FontWeight.w700, letterSpacing: 1.2, color: Colors.blue, fontSize: 16),
       overflow: TextOverflow.ellipsis,
       maxLines: 1,
     );
